@@ -1,0 +1,62 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Responsable.master.cs" Inherits="Sistema_Clasificador_De_Archivos_Web.Responsable" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximun-scale=1.0, minimun-scale=1.0" />
+    <title>Administración de Archivos</title>
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="Estilos.css" rel="stylesheet" />
+</head>
+<body>
+    <style>
+        /* Este es para los elementos en general */
+        .navbar-light .navbar-nav .nav-link {
+            color: black;
+        }
+    </style>
+    <form id="form1" runat="server">
+        <header>
+            <nav class="navbar navbar-expand-xl  navbar navbar-light " style="background-color: #0099cc;">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navegacion-fm">
+                            <span class="sr-only" >Desplegar / Ocultar Menu</span>
+                            <span class="icon-bar"  style="background-color:#79e0e7"></span>
+                            <span class="icon-bar"  style="background-color:#79e0e7"></span>
+                            <span class="icon-bar"  style="background-color:#79e0e7"></span>
+                        </button>
+                        <a href="#" class="navbar-brand " font-size: x-large" style="color:black">Administración de Archivos</a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="navegacion-fm">
+                        <ul class="nav navbar-nav">
+                            <li><a href="#"  style="color:black" font-size: larger">Inicio</a> </li>
+                            <li><a href="Ventana_Usuario.aspx"  style="color:black" class:"nav-link"  font-size: larger">Documentos</a></li>
+                            <li><a href="Inicio_Sesion.aspx"  style="color:black" class:"nav-link"  font-size: larger">Cerrar sesion</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <%--Se crea un jumbotron para el mensaje de Bienvenida--%>
+        <section class="jumbotron"style="background-color: #3da4f9;">
+            <div class="container" style="background-color: #3da4f9;">
+                <h1>Bienvenido</h1>
+                <p>Administracion de Archivos en la nube</p>
+            </div>
+        </section>
+        <%-- Se agregan las librerias del jquery--%>
+        <script src="Scripts/jquery-3.3.1.js"></script>
+        <script src="Scripts/bootstrap.min.js"></script>
+
+        <asp:ContentPlaceHolder ID="MainContent" runat="server">
+        </asp:ContentPlaceHolder>
+        <hr />
+        <footer>
+            <p>Administrador de Archivos</p>
+        </footer>
+    </form>
+</body>
+</html>

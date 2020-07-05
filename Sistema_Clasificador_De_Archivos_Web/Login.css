@@ -1,0 +1,51 @@
+﻿html,
+body {
+    height: 100%;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#b3dced+0,29b8e5+30,29b8e5+45,2bdcef+52,29b8e5+60,29b8e5+60,29b8e5+76,bce0ee+100 */
+    background: #b3dced; /* Old browsers */
+    background: -moz-linear-gradient(45deg, #b3dced 0%, #29b8e5 30%, #29b8e5 45%, #2bdcef 52%, #29b8e5 60%, #29b8e5 60%, #29b8e5 76%, #bce0ee 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(45deg, #b3dced 0%,#29b8e5 30%,#29b8e5 45%,#2bdcef 52%,#29b8e5 60%,#29b8e5 60%,#29b8e5 76%,#bce0ee 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(45deg, #b3dced 0%,#29b8e5 30%,#29b8e5 45%,#2bdcef 52%,#29b8e5 60%,#29b8e5 60%,#29b8e5 76%,#bce0ee 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b3dced', endColorstr='#bce0ee',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+body {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.form-signin {
+    width: 100%;
+    max-width: 330px;
+    padding: 15px;
+    margin: auto;
+}
+    .form-signin .form-control {
+        position: relative;
+        box-sizing: border-box;
+        height: auto;
+        padding: 10px;
+        font-size: 16px;
+    top: 3px;
+    left: 0px;
+}
+
+        .form-signin .form-control:focus {
+            z-index: 2;
+        }
+
+    .form-signin input[type="email"] {
+        margin-bottom: -1px;
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 0;
+    }
+
+    .form-signin input[type="password"] {
+        margin-bottom: 10px;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+    }
